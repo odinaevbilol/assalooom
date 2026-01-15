@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+    
+</head>
+<body>
+<section
+  class="relative min-h-screen bg-cover
+         bg-center
+         sm:bg-center
+         md:bg-[center_top]
+         lg:bg-right"
+  style="background-image: url('./background (2).png')"
+>
+  <!-- overlay -->
+  <div class="absolute inset-0 bg-black/30"></div>
+
+  <div class="relative max-w-7xl mx-auto px-4 py-6">
+
+    <!-- HEADER -->
+    <header class="flex items-center justify-between text-white">
+      <h1 class="text-2xl font-bold">Physionic</h1>
+
+      <!-- DESKTOP NAV -->
+      <nav class="hidden md:flex gap-8">
+        <a href="#" class="hover:text-blue-400">Home</a>
+        <a href="#" class="hover:text-blue-400">Product</a>
+        <a href="#" class="hover:text-blue-400">Pricing</a>
+        <a href="#" class="hover:text-blue-400">Contact</a>
+      </nav>
+
+      <!-- DESKTOP BUTTON -->
+      <button class="hidden md:block bg-blue-500 px-5 py-2 rounded-md">
+        Get Quote Now →
+      </button>
+
+      <!-- MOBILE ICONS -->
+      <div class="flex md:hidden items-center gap-4 text-xl">
+        <span>🔍</span>
+        <span>🛒</span>
+        <span class="text-2xl">☰</span>
+      </div>
+    </header>
+
+    <!-- MOBILE MENU -->
+    <div class="md:hidden bg-white text-gray-500 text-center py-10 space-y-6">
+      <a class="block text-lg">Home</a>
+      <a class="block text-lg">Product</a>
+      <a class="block text-lg">Pricing</a>
+      <a class="block text-lg">Contact</a>
+    </div>
+
+    <!-- HERO CONTENT -->
+    <div class="mt-16 flex flex-col lg:flex-row items-center gap-10">
+
+      <!-- LEFT TEXT -->
+      <div class="text-white lg:w-1/2 text-center lg:text-left">
+        <h2 class="text-4xl md:text-5xl font-bold leading-tight">
+          Meet the Best <br /> Hospital
+        </h2>
+
+        <p class="mt-4 text-gray-200 max-w-md mx-auto lg:mx-0">
+          We know how large objects will act, but things on a small scale.
+        </p>
+
+        <div class="mt-6 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+          <button class="bg-blue-500 px-6 py-3 rounded-full">
+            Get Quote Now
+          </button>
+
+          <button class="border border-white px-6 py-3 rounded-full">
+            Learn More
+          </button>
+        </div>
+      </div>
+
+      <!-- RIGHT FORM -->
+      <div class="w-full lg:w-1/2 flex justify-center lg:justify-end">
+        <div class="bg-white rounded-xl p-6 w-full max-w-sm">
+          <h3 class="text-xl font-bold mb-4 text-center">
+            Book Appointment
+          </h3>
+
+          <form class="space-y-4">
+            <div>
+              <label class="text-sm font-medium">Name *</label>
+              <input
+                type="text"
+                placeholder="Full Name"
+                class="w-full mt-1 border rounded-md px-3 py-2"
+              />
+            </div>
+
+            <div>
+              <label class="text-sm font-medium">Email *</label>
+              <input
+                type="email"
+                placeholder="example@gmail.com"
+                class="w-full mt-1 border rounded-md px-3 py-2"
+              />
+            </div>
+
+            <div>
+              <label class="text-sm font-medium">Department *</label>
+              <select class="w-full mt-1 border rounded-md px-3 py-2">
+                <option>Please Select</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="text-sm font-medium">Time *</label>
+              <select class="w-full mt-1 border rounded-md px-3 py-2">
+                <option>4:00 Available</option>
+              </select>
+            </div>
+
+            <button class="w-full bg-blue-500 text-white py-3 rounded-md mt-2">
+              Book Appointment
+            </button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+</body>
+</html>
